@@ -1,6 +1,5 @@
 import { useRef as UseRef } from "react";
 import emailjs from "@emailjs/browser";
-import assets from "../Data/assets";
 
 const contact = () => {
   const form = UseRef();
@@ -17,9 +16,9 @@ const contact = () => {
       )
       .then(
         (result) => {
-          alert("Message sent")
+          alert("Message sent");
           console.log(result.text);
-          e.target.reset()
+          e.target.reset();
         },
         (error) => {
           console.log(error.text);
@@ -27,9 +26,9 @@ const contact = () => {
       );
   };
   return (
-    <section id="contact" className="relative">
-      <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-xl overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+    <section id="contact" className="">
+      <div className="container px-5 py-10 mx-auto">
+        {/* <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-xl overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <img
             width="100%"
             height="100%"
@@ -45,42 +44,37 @@ const contact = () => {
             className="bg-gray-800 relative flex flex-wrap h-full w-full py-6 rounded-xl shadow-md"
             style={{ filter: "opacity(0.9)" }}
           >
-            {/* <div className="lg:w-1/3 px-6">
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                Github
-              </h2>
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                LinkedIn
-              </h2>
-            </div> */}
-            <div className="lg:w-2/3 px-6 mt-4 lg:mt-0">
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs">
-                EMAIL
-              </h2>
-              <div className="text-white leading-relaxed">
-                richard.m.codes@gmail.com
+            <div className="px-6 mt-4 lg:mt-0">
+              <p className="text-white leading-relaxed lg:text-3xl text-1xl ">
+                <i className="bi bi-github mr-4"></i>Github
+              </p>
+              <p className="text-white leading-relaxed lg:text-3xl text-1xl">
+                <i class="bi bi-linkedin mr-2"></i> LinkedIn
+              </p>
+              <div className="text-white leading-relaxed lg:text-3xl text-1xl">
+                <i class="bi bi-envelope mr-2"></i> richard.m.codes@gmail.com
               </div>
-              <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
-                PHONE
-              </h2>
-              <p className="text-white leading-relaxed">07956 781381</p>
+              <p className="text-white leading-relaxed lg:text-3xl text-1xl">
+                <i class="bi bi-telephone mr-2"></i> 07956 781381
+              </p>
             </div>
           </div>
+        </div> */}
+        <div className="container px-5 pt-20 mx-auto text-center lg:px-40">
+          <h1 className="sm:text-4xl md:text-5xl text-3xl font-medium title-font text-yellow-600 mb-4">
+            Hire Me
+          </h1>
+          <p className="leading-relaxed mb-5">
+            I look forward to hearing from you.
+          </p>
         </div>
 
         <form
           name="contact"
           ref={form}
           onSubmit={sendEmail}
-          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+          className="lg:w-1/3 md:w-1/2 md:m-auto w-full md:py-8 mt-8 md:mt-0"
         >
-          <h2 className="text-yellow-600 sm:text-4xl text-3xl mb-1 font-medium title-font">
-            Hire Me
-          </h2>
-          <p className="leading-relaxed mb-5">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-            suscipit officia aspernatur veritatis. Asperiores, aliquid?
-          </p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-700">
               Name
