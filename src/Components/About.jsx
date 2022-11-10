@@ -1,6 +1,6 @@
 import { HashLink } from 'react-router-hash-link'
 
-import Hero from '../Assets/profile1.jpg'
+import assets from '../Data/assets'
 
 const About = () => {
     return (
@@ -15,7 +15,7 @@ const About = () => {
             </h2>
             <p className="mb-8 leading-relaxed text-lg font-medium">
               I am junior fullstack developer with a passion for building
-              user-friendly applications on the three pillars of React.js,
+              user-centric applications on the three pillars of React.js,
               Prisma and Tailwind.
             </p>
             <div className="flex justify-center">
@@ -39,7 +39,7 @@ const About = () => {
             <img
               className="object-cover object-center rounded-full"
               alt="Richard in the foreground with a camera"
-              src={Hero}
+              src={assets[0].image}
             />
           </div>
         </div>

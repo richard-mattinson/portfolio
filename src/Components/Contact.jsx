@@ -1,5 +1,6 @@
 import { useRef as UseRef } from "react";
 import emailjs from "@emailjs/browser";
+import assets from "../Data/assets";
 
 const contact = () => {
   const form = UseRef();
@@ -16,6 +17,7 @@ const contact = () => {
       )
       .then(
         (result) => {
+          alert("Message sent")
           console.log(result.text);
           e.target.reset()
         },
@@ -37,26 +39,26 @@ const contact = () => {
             marginHeight={0}
             marginWidth={0}
             style={{ filter: "opacity(0.8)" }}
-            src="https://drive.google.com/uc?id=15AJdu-wbar3XP2mqGuVhwijDy9SFdMJd"
+            src={assets[1].image}
           />
           <div
             className="bg-gray-800 relative flex flex-wrap h-full w-full py-6 rounded-xl shadow-md"
             style={{ filter: "opacity(0.9)" }}
           >
-            <div className="lg:w-1/3 px-6">
+            {/* <div className="lg:w-1/3 px-6">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 Github
               </h2>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 LinkedIn
               </h2>
-            </div>
+            </div> */}
             <div className="lg:w-2/3 px-6 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
               <div className="text-white leading-relaxed">
-                richard.m@ttinson.net
+                richard.m.codes@gmail.com
               </div>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                 PHONE
