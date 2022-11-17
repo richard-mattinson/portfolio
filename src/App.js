@@ -8,7 +8,7 @@ import Contact from "./Components/Contact"
 
 function App() {
   return (
-    <main className="font-['Poppins'] body-font text-black-300 bg-gray-100">
+    <main className="font-['Poppins'] body-font text-gray-900 bg-gray-100">
       <Nav />
       <About />
       <Projects />

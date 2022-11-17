@@ -28,38 +28,6 @@ const contact = () => {
   return (
     <section id="contact" className="">
       <div className="container px-5 py-10 mx-auto">
-        {/* <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-xl overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-          <img
-            width="100%"
-            height="100%"
-            alt="code"
-            className="absolute inset-0"
-            frameBorder={0}
-            marginHeight={0}
-            marginWidth={0}
-            style={{ filter: "opacity(0.8)" }}
-            src={assets[1].image}
-          />
-          <div
-            className="bg-gray-800 relative flex flex-wrap h-full w-full py-6 rounded-xl shadow-md"
-            style={{ filter: "opacity(0.9)" }}
-          >
-            <div className="px-6 mt-4 lg:mt-0">
-              <p className="text-white leading-relaxed lg:text-3xl text-1xl ">
-                <i className="bi bi-github mr-4"></i>Github
-              </p>
-              <p className="text-white leading-relaxed lg:text-3xl text-1xl">
-                <i class="bi bi-linkedin mr-2"></i> LinkedIn
-              </p>
-              <div className="text-white leading-relaxed lg:text-3xl text-1xl">
-                <i class="bi bi-envelope mr-2"></i> richard.m.codes@gmail.com
-              </div>
-              <p className="text-white leading-relaxed lg:text-3xl text-1xl">
-                <i class="bi bi-telephone mr-2"></i> 07956 781381
-              </p>
-            </div>
-          </div>
-        </div> */}
         <div className="container px-5 pt-20 mx-auto text-center lg:px-40">
           <h1 className="sm:text-4xl md:text-5xl text-3xl font-medium title-font text-yellow-600 mb-4">
             Hire Me
@@ -116,7 +84,7 @@ const contact = () => {
           <button
             type="submit"
             value="send"
-            className="text-white bg-gray-700 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded-full text-lg"
+            className="text-white bg-gray-900 border-0 py-2 px-6 focus:outline-none hover:bg-orange-600 rounded-full text-lg transition-colors"
           >
             Submit
           </button>

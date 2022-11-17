@@ -32,7 +32,7 @@ const skills = [
     image: "",
   },
   {
-    name: "ElephantSQL",
+    name: "SQL",
     image: "",
   },
   {

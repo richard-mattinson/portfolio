@@ -2,19 +2,18 @@ const projects = [
   {
     id: "01",
     title: "Sew Piggies",
-    stack: "React, Prisma & Bootstrap",
+    stack: "React, Bootstrap & Prisma",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut iusto nobis nesciunt eaque debitis dolor tempora quas tenetur cupiditate, nisi alias itaque fugit optio cum, ab deserunt doloribus? Aliquam, incidunt?",
+      "A simple storefront site, utilising React states and effects, Bootstrap components, and a Prisma relational database backend",
     image: "https://drive.google.com/uc?id=1z__gshXSsFAAr8BcxXvnYd4zFo_XdRqY",
     link: "#",
   },
   {
     id: "02",
-    title: "ChatVeryGood",
-    stack: "Javascript, Tailwind & Firebase",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut iusto nobis nesciunt eaque debitis dolor tempora quas tenetur cupiditate, nisi alias itaque fugit optio cum, ab deserunt doloribus? Aliquam, incidunt?",
-    image: "https://drive.google.com/uc?id=1z__gshXSsFAAr8BcxXvnYd4zFo_XdRqY",
+    title: "Scrolls",
+    stack: "React, Tailwind & Firebase",
+    description: "A single screen chat app, utilising React states, Tailwind classes, Firebase firestore, and Google authentication.",
+    image: "https://drive.google.com/uc?id=1Q97ePNbMVSIIXHauK1UMi8e4g_gWE8CF",
     link: "#",
   },
 ];
