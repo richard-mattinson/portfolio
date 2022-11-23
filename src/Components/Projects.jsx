@@ -25,7 +25,7 @@ const Projects = () => {
               >
                 <div className="flex relative min-h-full">
                   <img
-                    alt="Portfolio gallery"
+                    alt={project.alt}
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-xl"
                     src={project.image}
                   />
